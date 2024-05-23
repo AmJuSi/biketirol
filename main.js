@@ -11,6 +11,8 @@ let map = L.map("map", {
     fullscreenControl: true
 }).setView([ibk.lat, ibk.lng], 9);
 
+
+
 // thematische Layer
 let themaLayer = {
     route: L.featureGroup(),
@@ -81,3 +83,7 @@ pulldown.onchange = function (evt) {
     let url = `https://${username}.github.io/biketirol`;
     window.location.href = url;
 }
+
+// minimap
+var osm2 = new L.TileLayer(osmUrl, { minZoom: 0, maxZoom: 13, attribution: osmAttrib });
+var miniMap = new L.Control.MiniMap(osm2).addTo(map);
