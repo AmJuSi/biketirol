@@ -68,5 +68,11 @@ footer nav {
 
 #profile {
     margin-top: 0.3em;
-    border: 1px solid gray;
+    border: 1px solid rgb(255, 0, 204);
+
+}
+
+.bike-tirol {
+    --ele-area: rgb(38, 66, 38);
+    --ele-bg: rgb(248, 248, 248);
 }
